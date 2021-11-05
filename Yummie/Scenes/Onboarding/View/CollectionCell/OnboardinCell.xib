@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OnboardinCell" customModule="Yummie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="490" height="794"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="490" height="794"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slide1" translatesAutoresizingMaskIntoConstraints="NO" id="sby-0a-4wo">
+                        <rect key="frame" x="0.0" y="0.0" width="490" height="595.5"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yXD-DI-N0B">
+                        <rect key="frame" x="10" y="625.5" width="470" height="168.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quick Delivery at Your Doorstep" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylG-ly-ik0">
+                                <rect key="frame" x="0.0" y="0.0" width="470" height="37"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCM-PH-nXV">
+                                <rect key="frame" x="0.0" y="37" width="470" height="131.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yXD-DI-N0B" secondAttribute="trailing" constant="10" id="6Sn-bo-5FI"/>
+                <constraint firstItem="yXD-DI-N0B" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Iyo-Rf-rZW"/>
+                <constraint firstItem="sby-0a-4wo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NJ5-2a-KVL"/>
+                <constraint firstItem="sby-0a-4wo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="diJ-lA-EeT"/>
+                <constraint firstItem="yXD-DI-N0B" firstAttribute="top" secondItem="sby-0a-4wo" secondAttribute="bottom" constant="30" id="lZ3-uL-ntT"/>
+                <constraint firstAttribute="trailing" secondItem="sby-0a-4wo" secondAttribute="trailing" id="p8F-QT-JbN"/>
+                <constraint firstItem="sby-0a-4wo" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.75" id="rSs-IF-qAw"/>
+                <constraint firstItem="sby-0a-4wo" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="tFm-wC-7yX"/>
+                <constraint firstAttribute="bottom" secondItem="yXD-DI-N0B" secondAttribute="bottom" id="xM1-68-x7T"/>
+            </constraints>
+            <size key="customSize" width="490" height="794"/>
+            <connections>
+                <outlet property="onboardingImage" destination="sby-0a-4wo" id="yfu-Bp-muI"/>
+                <outlet property="slideDescriptionLabel" destination="eCM-PH-nXV" id="Itd-5E-c1J"/>
+                <outlet property="slideTitleLabel" destination="ylG-ly-ik0" id="NG2-ix-O3v"/>
+            </connections>
+            <point key="canvasLocation" x="186" y="315"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="slide1" width="484" height="457.5"/>
+    </resources>
+</document>
